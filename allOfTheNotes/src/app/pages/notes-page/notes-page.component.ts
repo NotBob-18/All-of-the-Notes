@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { NgForm, NgModel } from '@angular/forms';
+
+
 @Component({
   selector: 'app-notes-page',
   standalone: true,
@@ -7,6 +10,12 @@ import { Component } from '@angular/core';
   templateUrl: './notes-page.component.html',
   styleUrl: './notes-page.component.scss'
 })
+
+
 export class NotesPageComponent {
 
-}
+   
+  
+    
+  }
+ 
