@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-notes-page',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   templateUrl: './notes-page.component.html',
   styleUrl: './notes-page.component.scss'
 })
+
+
 export class NotesPageComponent {
 
 }
