@@ -12,4 +12,8 @@ import { NgForm, NgModel } from '@angular/forms';
 
 export class NotesPageComponent {
 
+
+
+  
+  
 }
