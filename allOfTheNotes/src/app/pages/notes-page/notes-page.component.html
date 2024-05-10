@@ -1,47 +1,38 @@
- 
-  
 
-    <nav class="navbar navbar-expand-lg 
-                navbar-light bg-success"> 
-        <a class="navbar-brand" href="#"> 
-            <p style="font-size: 30px;"> 
-                THE NOTES TAKER 
-            </p> 
-  
-        </a> 
-    </nav> 
-  
-    <div class="container my-3"> 
-        <h1>Take your Notes here</h1> 
-        <div class="card"> 
-            <div class="card-body"> 
-                <h5 class="card-title"> 
-                    Add a Note 
-                  
-                </h5> 
-                <div class="form-group"> 
-                    <textarea class="form-control"
-                        id="addTxt" rows="3"> 
-                    </textarea> 
-                </div> 
-                <button class="btn btn-primary"
-                    id="addBtn" style= 
-                    "background-color:green"> 
-                    Add Note 
-                </button> 
-            </div> 
-        </div> 
-        <hr> 
-        <h1>Your Notes</h1> 
-        <hr> 
-          
-        <div id="notes" class= 
-            "row container-fluid"> 
-        </div> 
-    </div> 
-  
-    <script src="gfg.js"></script> 
+<div class="container">
 
+    <h1>To-Do Application</h1>
+  
+    <hr>
+    <form>
+        <div class="form-group">
+            <label for="task">Task</label>
+            <input type="text" class="form-control" id="task" placeholder="Enter task" required>
+            <small  id="errorMessage" class="form-text text-danger">Required
+                field</small>
+        </div>
+  
+        <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+    <hr>
+  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Completed</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of taskArray; index as i">
+                <td>{{t.taskName}}</td>
+                <td><input id="myCheckbox" type="checkbox"></td>
+                <td><button class="btn btn-danger btn-sm" >Delete</button></td>
+            </tr>
+  
+        </tbody>
+    </table>
+  </div>
 
-
-   
